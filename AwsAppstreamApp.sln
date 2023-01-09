@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsAppstreamApp", "AwsAppstreamApp\AwsAppstreamApp.csproj", "{FA4F8B3B-1509-42D1-A5BC-65830F166D77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA4F8B3B-1509-42D1-A5BC-65830F166D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4F8B3B-1509-42D1-A5BC-65830F166D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4F8B3B-1509-42D1-A5BC-65830F166D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4F8B3B-1509-42D1-A5BC-65830F166D77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C2691C3-2536-4089-92AF-690B889C8A73}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://so-software.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AwsAppstreamApp\\AwsAppstreamApp.csproj
+		SccProjectName1 = AwsAppstreamApp
+		SccLocalPath1 = AwsAppstreamApp
+	EndGlobalSection
+EndGlobal
