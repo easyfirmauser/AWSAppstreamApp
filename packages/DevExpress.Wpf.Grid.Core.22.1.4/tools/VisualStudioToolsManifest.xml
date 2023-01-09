@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.Grid.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Data &amp; Analytics" BlendCategory="DX.22.1: Data &amp; Analytics">
+      <Item Type="DevExpress.Xpf.Grid.GridControl" />
+      <Item Type="DevExpress.Xpf.Grid.TreeListControl" />
+      <Item Type="DevExpress.Xpf.Grid.TreeViewControl" />
+    </ToolboxItems>
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Common Controls" BlendCategory="DX.22.1: Common Controls">
+      <Item Type="DevExpress.Xpf.Grid.LookUp.LookUpEdit" />
+    </ToolboxItems>
+  </File>
+</FileList>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.PropertyGrid.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Data &amp; Analytics" BlendCategory="DX.22.1: Data &amp; Analytics">
+      <Item Type="DevExpress.Xpf.PropertyGrid.PropertyGridControl" />
+    </ToolboxItems>
+  </File>
+</FileList>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.Ribbon.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Navigation &amp; Layout" BlendCategory="DX.22.1: Navigation &amp; Layout">
+      <Item Type="DevExpress.Xpf.Ribbon.BackstageViewControl" />
+      <Item Type="DevExpress.Xpf.Ribbon.RibbonControl" />
+      <Item Type="DevExpress.Xpf.Ribbon.RibbonStatusBarControl" />
+    </ToolboxItems>
+  </File>
+</FileList>

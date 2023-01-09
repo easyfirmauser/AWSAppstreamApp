@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.LayoutControl.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Layout Control" BlendCategory="DX.22.1: Layout Control">
+      <Item Type="DevExpress.Xpf.LayoutControl.DataLayoutControl" />
+      <Item Type="DevExpress.Xpf.LayoutControl.DataLayoutItem" />
+      <Item Type="DevExpress.Xpf.LayoutControl.DockLayoutControl" />
+      <Item Type="DevExpress.Xpf.LayoutControl.FlowLayoutControl" />
+      <Item Type="DevExpress.Xpf.LayoutControl.LayoutControl" />
+      <Item Type="DevExpress.Xpf.LayoutControl.LayoutGroup" />
+      <Item Type="DevExpress.Xpf.LayoutControl.LayoutItem" />
+      <Item Type="DevExpress.Xpf.LayoutControl.Tile" />
+      <Item Type="DevExpress.Xpf.LayoutControl.TileLayoutControl" />
+    </ToolboxItems>
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Navigation &amp; Layout" BlendCategory="DX.22.1: Navigation &amp; Layout">
+      <Item Type="DevExpress.Xpf.LayoutControl.GroupBox" />
+      <Item Type="DevExpress.Xpf.LayoutControl.ScrollBox" />
+    </ToolboxItems>
+  </File>
+</FileList>

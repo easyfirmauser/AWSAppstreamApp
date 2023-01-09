@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.Charts.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Data &amp; Analytics" BlendCategory="DX.22.1: Data &amp; Analytics">
+      <Item Type="DevExpress.Xpf.Charts.Chart3DControl" />
+      <Item Type="DevExpress.Xpf.Charts.ChartControl" />
+      <Item Type="DevExpress.Xpf.Charts.Sankey.SankeyDiagramControl" />
+      <Item Type="DevExpress.Xpf.Charts.Heatmap.HeatmapControl" />
+    </ToolboxItems>
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Common Controls" BlendCategory="DX.22.1: Common Controls">
+      <Item Type="DevExpress.Xpf.Charts.RangeControlClient.TimeSpanChartRangeControlClient" />
+      <Item Type="DevExpress.Xpf.Charts.RangeControlClient.DateTimeChartRangeControlClient" />
+      <Item Type="DevExpress.Xpf.Charts.RangeControlClient.NumericChartRangeControlClient" />
+    </ToolboxItems>
+  </File>
+</FileList>

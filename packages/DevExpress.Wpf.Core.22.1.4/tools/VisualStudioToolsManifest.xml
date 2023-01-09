@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FileList>
+  <File Reference="DevExpress.Xpf.Core.v22.1.dll">
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Common Controls" BlendCategory="DX.22.1: Common Controls">
+      <Item Type="DevExpress.Xpf.Editors.MemoEdit" />
+      <Item Type="DevExpress.Xpf.Editors.SpinEdit" />
+      <Item Type="DevExpress.Xpf.Editors.TimePicker" />
+      <Item Type="DevExpress.Xpf.Editors.AutoSuggestEdit" />
+      <Item Type="DevExpress.Xpf.Editors.CheckEdit" />
+      <Item Type="DevExpress.Xpf.Editors.HyperlinkEdit" />
+      <Item Type="DevExpress.Xpf.Editors.RatingEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ToggleSwitch" />
+      <Item Type="DevExpress.Xpf.Editors.CameraControl" />
+      <Item Type="DevExpress.Xpf.Editors.BarCodeEdit" />
+      <Item Type="DevExpress.Xpf.Editors.PopupCalcEdit" />
+      <Item Type="DevExpress.Xpf.Editors.Calculator" />
+      <Item Type="DevExpress.Xpf.Editors.PopupColorEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ColorEdit" />
+      <Item Type="DevExpress.Xpf.Editors.DateEdit" />
+      <Item Type="DevExpress.Xpf.Editors.FontEdit" />
+      <Item Type="DevExpress.Xpf.Editors.SearchControl" />
+      <Item Type="DevExpress.Xpf.Editors.ImageEdit" />
+      <Item Type="DevExpress.Xpf.Editors.PopupImageEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ListBoxEdit" />
+      <Item Type="DevExpress.Xpf.Editors.PasswordBoxEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ProgressBarEdit" />
+      <Item Type="DevExpress.Xpf.Editors.TextEdit" />
+      <Item Type="DevExpress.Xpf.Editors.TrackBarEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ButtonEdit" />
+      <Item Type="DevExpress.Xpf.Editors.ComboBoxEdit" />
+      <Item Type="DevExpress.Xpf.Editors.Flyout.FlyoutControl" />
+      <Item Type="DevExpress.Xpf.Editors.RangeControl.RangeControl" />
+      <Item Type="DevExpress.Xpf.Editors.DateNavigator.DateNavigator" />
+      <Item Type="DevExpress.Xpf.Core.DropDownButton" />
+      <Item Type="DevExpress.Xpf.Core.SimpleButton" />
+      <Item Type="DevExpress.Xpf.Core.SplitButton" />
+      <Item Type="DevExpress.Xpf.Bars.GalleryControl" />
+    </ToolboxItems>
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Data &amp; Analytics" BlendCategory="DX.22.1: Data &amp; Analytics">
+      <Item Type="DevExpress.Xpf.Editors.SparklineEdit" />
+    </ToolboxItems>
+    <ToolboxItems UIFramework="WPF" VSCategory="DX.22.1: Navigation &amp; Layout" BlendCategory="DX.22.1: Navigation &amp; Layout">
+      <Item Type="DevExpress.Xpf.Core.UniformStackPanel" />
+      <Item Type="DevExpress.Xpf.Core.DXTabControl" />
+      <Item Type="DevExpress.Xpf.Bars.BarContainerControl" />
+      <Item Type="DevExpress.Xpf.Bars.BarManager" />
+      <Item Type="DevExpress.Xpf.Bars.ToolBarControl" />
+      <Item Type="DevExpress.Xpf.Bars.MainMenuControl" />
+      <Item Type="DevExpress.Xpf.Bars.StatusBarControl" />
+    </ToolboxItems>
+  </File>
+</FileList>
