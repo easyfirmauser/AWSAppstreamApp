@@ -58,7 +58,7 @@
                                   Width="300"
                                   VerticalAlignment="Center"></TextBox>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Horizontal" Margin="5 0">
                         <Label Content="Access Key Secret:"
                                VerticalContentAlignment="Center" />
                         <TextBox Margin="5 0 0 0"
@@ -288,6 +288,54 @@
                             </dxc:ChartControl.Legend>
                         </dxc:ChartControl>
                     </StackPanel>
+                </dxdo:LayoutPanel>
+                <dxdo:LayoutPanel Caption="S3 Usage statistics">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Margin="5,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Text="From: " />
+                            <dxe:DateEdit Name="tbDatumS3ApiFrom"
+                                          AllowNullInput="False"
+                                          Width="130" />
+                            <TextBlock Margin="5,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Text="To: " />
+                            <dxe:DateEdit Name="tbDatumS3ApiTo"
+                                          Width="130"
+                                          AllowNullInput="False"
+                                          Margin="0 0 5 0" />
+                            <TextBlock Margin="5,0,0,0"
+                                       VerticalAlignment="Center"
+                                       Text="Bucket name: " />
+                            <TextBox x:Name="TbBucketName"
+                                     Margin="5,0,0,0"
+                                     Width="300"
+                                     VerticalAlignment="Center" />
+                            <Button Margin="5 0"
+                                    Click="BtnGetS3Stat">Get S3 Session Data (sessions/schedule=DAILY/...)</Button>
+                            <Label Content="Csv files are saved to [AppDataFolder]\S3SessionsLog folder"></Label>
+
+                        </StackPanel>
+                        <dxg:GridControl x:Name="DgS3Sessions"
+                                         Margin="0 5"
+                                         Grid.Row="1"
+                                         AutoGenerateColumns="AddNew">
+                            <dxg:GridControl.View>
+                                <dxg:TableView x:Name="mainDataGridTableView2"
+                                               ShowGroupPanel="False"
+                                               NavigationStyle="Row"
+                                               AllowEditing="False"
+                                               EnableSelectedRowAppearance="True" />
+                            </dxg:GridControl.View>
+                        </dxg:GridControl>
+                    </Grid>
+
+
                 </dxdo:LayoutPanel>
             </dxdo:TabbedGroup>
           

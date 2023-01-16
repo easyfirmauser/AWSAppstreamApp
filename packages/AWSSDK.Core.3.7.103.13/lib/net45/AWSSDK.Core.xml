@@ -11526,6 +11526,11 @@
             A timestamp indicating when the client was registered will be appended to requests made to the SSOOIDC service.
             </summary>
         </member>
+        <member name="P:Amazon.Runtime.SSOAWSCredentialsOptions.SessionName">
+            <summary>
+            The name of the sso_session section in the shared configuration file specified to be used when loading the token.
+            </summary>
+        </member>
         <member name="P:Amazon.Runtime.SSOAWSCredentialsOptions.SsoVerificationCallback">
             <summary>
             A callback that is used to initiate the SSO Login flow with the user.

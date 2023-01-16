@@ -32,6 +32,7 @@ namespace AWSAppstreamApp
         public string AccessKeyID => TbApiKeyID.Text;
         public string AccessKeySecret => TbApiSecret.Text;
         public bool ResetLayoutHappened;
+        public static string AppDataSessionFolder { get; set; } = System.AppDomain.CurrentDomain.BaseDirectory + "\\S3SessionsLog";
         public MainWindow()
         {
             InitializeComponent();
@@ -79,12 +80,15 @@ namespace AWSAppstreamApp
         {
             TbApiKeyID.Text = AppsettingsHelper.ReadSetting("AccessKeyID");
             TbApiSecret.Text = AppsettingsHelper.ReadSetting("AccessKeySecret");
+            TbBucketName.Text = AppsettingsHelper.ReadSetting("BucketName");
         }
 
         private void InitDate()
         {
             tbDatumFrom.DateTime = DateTime.Now.AddDays(-20);
             tbDatumTo.DateTime = DateTime.Now;
+            tbDatumS3ApiFrom.DateTime = DateTime.Now.AddDays(-20);
+            tbDatumS3ApiTo.DateTime = DateTime.Now;
         }
 
         private void InitPeriodsAndStats()
@@ -136,9 +140,19 @@ namespace AWSAppstreamApp
         private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             SaveLayout();
+            SaveData();
         }
 
+        private void SaveData()
+        {
+            AppsettingsHelper.AddUpdateAppSettings("BucketName", TbBucketName.Text);
 
+            //if (!String.IsNullOrWhiteSpace(TbBucketName.Text))
+            //{
+            //    AppsettingsHelper.AddUpdateAppSettings("BucketName", TbBucketName.Text);
+            //}
+        }
+        
         private void RestoreLayout()
         {
             var vStacksPath = GetPath(DgStacksXml);
@@ -335,6 +349,7 @@ namespace AWSAppstreamApp
             {
                 AppstreamAPI.Init(AccessKeyID, AccessKeySecret);
                 CloudWatchAPI.Init(AccessKeyID, AccessKeySecret);
+                S3API.Init(AccessKeyID, AccessKeySecret);
                 res = true;
             }
 
@@ -371,7 +386,6 @@ namespace AWSAppstreamApp
 
                 //DgMetrics.ItemsSource = await CloudWatchAPI.GetMetrics();
                 LbMetrics.ItemsSource = await CloudWatchAPI.GetMetrics();
-               
             }
             catch (Exception e)
             {
@@ -387,7 +401,8 @@ namespace AWSAppstreamApp
         {
             return DgUsers.SelectedItem as User;
         }
-        private void WriteOutput(string pMessage)
+
+        public void WriteOutput(string pMessage)
         {
             var vMsg = pMessage;
             if (TbOutput.Text.Any())
@@ -645,6 +660,27 @@ namespace AWSAppstreamApp
             catch (Exception ex)
             {
                 WriteOutput(ex.Message);
+            }
+            finally
+            {
+                pbStatus.IsIndeterminate = false;
+            }
+        }
+
+        private async void BtnGetS3Stat(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                pbStatus.IsIndeterminate = true;
+                var vBucket = TbBucketName.Text;
+                var dateTimeStart = DateTime.Now.AddDays(-20);
+                var dateTimeEnd = DateTime.Now;
+                var list=await S3API.GetObject(dateTimeStart, dateTimeEnd, WriteOutput, vBucket, AppDataSessionFolder);
+                DgS3Sessions.ItemsSource = list;
+            }
+            catch (Exception exception)
+            {
+                WriteOutput(exception.Message);
             }
             finally
             {
